@@ -1,11 +1,9 @@
-const mongoose = require("mongoose");
+import mongoose from 'mongoose';
 
-const ResignationSchema = new mongoose.Schema({
-  employeeId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
-  lastWorkingDay: { type: Date, required: true },
-  reason: { type: String, required: true },
-  status: { type: String, enum: ["Pending", "Approved", "Rejected"], default: "Pending" },
-  exitInterviewCompleted: { type: Boolean, default: false },
+const resignationSchema = new mongoose.Schema({
+    employeeId: { type: mongoose.Schema.Types.ObjectId, ref: 'Employee' },
+    reason: String,
+    status: { type: String, default: 'Pending' },
 });
 
-module.exports = mongoose.model("Resignation", ResignationSchema);
+export default mongoose.model('Resignation', resignationSchema);
