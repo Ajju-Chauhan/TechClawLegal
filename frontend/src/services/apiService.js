@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://clawlegal-tech-1.onrender.com';
+const API_URL = 'https://techclawlegal.onrender.com/api';
 
 export const register = async (userData) => axios.post(`${API_URL}/auth/register`, userData);
 export const login = async (credentials) => axios.post(`${API_URL}/auth/login`, credentials);
