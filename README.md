@@ -48,9 +48,9 @@ npm start
 📂 Project Structure
 
 TechClawLegal/
-│── frontend/       # React.js frontend code
-│── backend/        # Express.js backend code
-│── README.md       # Project documentation
+frontend/       # React.js frontend code
+backend/        # Express.js backend code
+README.md       # Project documentation
 
 🤝 Contributing
 
